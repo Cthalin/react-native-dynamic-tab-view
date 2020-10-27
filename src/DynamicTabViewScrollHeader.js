@@ -105,6 +105,7 @@ DynamicdefaultStyle = {
     overflow: "hidden",
     backgroundColor: "#555555",
     padding: 20,
+    paddingBottom: 0,
     justifyContent: "center",
     alignItems: "center"
   },
