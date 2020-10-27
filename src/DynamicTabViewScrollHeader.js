@@ -37,7 +37,9 @@ class DynamicTabViewScrollHeader extends React.Component {
             style={[
               { fontWeight: fontWeight },
               this.defaultStyle.tabItemText,
-              isTabActive ? this.props.headerActiveTextStyle : this.props.headerTextStyle
+              isTabActive
+                  ? (this.props.headerActiveTextStyle || this.props.headerTextStyle)
+                  : this.props.headerTextStyle
             ]}
           >
             {item["title"]}
